@@ -8,23 +8,19 @@
  * https://www.eclipse.org/legal/epl-v20.html
  */
 
-package org.junit.platform.commons.util;
+package org.junit.platform.commons;
 
-import static org.apiguardian.api.API.Status.DEPRECATED;
+import static org.apiguardian.api.API.Status.STABLE;
 
 import org.apiguardian.api.API;
-import org.junit.platform.commons.JUnitException;
 
 /**
  * Thrown if a <em>precondition</em> is violated.
  *
- * @since 1.0
- * @see Preconditions
- * @deprecated Use {@linkplain org.junit.platform.commons.PreconditionViolationException} instead.
+ * @since 1.5
  */
-@API(status = DEPRECATED, since = "1.5")
-@Deprecated
-public class PreconditionViolationException extends JUnitException {
+@API(status = STABLE, since = "1.5")
+public class PreconditionViolationException extends org.junit.platform.commons.util.PreconditionViolationException {
 
 	private static final long serialVersionUID = 1L;
 
