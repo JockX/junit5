@@ -10,7 +10,7 @@
 
 package org.junit.platform.commons;
 
-import static org.apiguardian.api.API.Status.STABLE;
+import static org.apiguardian.api.API.Status.INTERNAL;
 
 import org.apiguardian.api.API;
 
@@ -19,8 +19,8 @@ import org.apiguardian.api.API;
  *
  * @since 1.5
  */
-@API(status = STABLE, since = "1.5")
-public class PreconditionViolationException extends org.junit.platform.commons.util.PreconditionViolationException {
+@API(status = INTERNAL, since = "1.5")
+public class PreconditionViolationException extends JUnitException {
 
 	private static final long serialVersionUID = 1L;
 
