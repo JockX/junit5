@@ -40,7 +40,7 @@ import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
  * @see MethodOrderer.OrderAnnotation
  * @see org.junit.jupiter.api.extension.RegisterExtension @RegisterExtension
  */
-@Target({ ElementType.FIELD, ElementType.METHOD })
+@Target({ ElementType.FIELD, ElementType.METHOD, ElementType.TYPE })
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @API(status = EXPERIMENTAL, since = "5.4")
